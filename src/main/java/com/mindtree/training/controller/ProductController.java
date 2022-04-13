@@ -21,6 +21,7 @@ public class ProductController {
 	public String listProduct(Model pModel) {
 		pModel.addAttribute("products", productService.listAllProducts());
 		System.out.println("Returning Products");
+		System.out.println("Returning Products newly added");
 		return "products";
 
 	}
